@@ -251,10 +251,159 @@ textarea {
   padding: 32px 12px;
 }
 
+/* ---- 停泵检修闭环 ---- */
+.side {
+  display: grid;
+  gap: 18px;
+  align-content: start;
+}
+
+.reset-btn {
+  padding: 7px 12px;
+  font-size: 13px;
+}
+
+.metric strong.warn {
+  color: #c84b31;
+}
+
+.flash {
+  margin: -4px 0 16px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: #e8f4ef;
+  border: 1px solid #bfe3d5;
+  color: #14724f;
+  font-size: 14px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.field-hint {
+  margin: 0;
+  font-size: 12px;
+  color: #69758c;
+}
+
+.danger-hint, .form-error {
+  color: #c84b31;
+}
+
+.form-error {
+  margin: 0;
+  padding: 9px 12px;
+  border-radius: 8px;
+  background: #fdeee9;
+  border: 1px solid #f3c7bd;
+  font-size: 13px;
+}
+
+.form-ok {
+  margin: 0;
+  padding: 9px 12px;
+  border-radius: 8px;
+  background: #e8f4ef;
+  border: 1px solid #bfe3d5;
+  color: #14724f;
+  font-size: 13px;
+}
+
+.tabs, .filters {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.toolbar select {
+  width: auto;
+}
+
+.status.st-active {
+  background: #fdeee9;
+  color: #c84b31;
+}
+
+.status.st-review {
+  background: #fdf3dd;
+  color: #a06a00;
+}
+
+.status.st-done, .status.st-reviewed {
+  background: #e8f4ef;
+  color: #14724f;
+}
+
+.status.st-cancelled {
+  background: #eceff4;
+  color: #69758c;
+}
+
+.order-card .overdue-note {
+  background: #fdf3dd;
+}
+
+.meta {
+  margin: -4px 0 12px;
+  color: #8a94a8;
+  font-size: 12px;
+}
+
+.inline-edit {
+  display: grid;
+  gap: 10px;
+  margin-top: 4px;
+  padding: 12px;
+  border: 1px dashed #cfd8e5;
+  border-radius: 8px;
+  background: #f6f9fc;
+}
+
+.station-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.pumps {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 0 0 12px;
+}
+
+.pump {
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 12px;
+  background: #e8f4ef;
+  color: #14724f;
+}
+
+.pump.occupied {
+  background: #fdeee9;
+  color: #c84b31;
+}
+
+.stock-low {
+  color: #c84b31;
+  font-weight: 700;
+}
+
+button.secondary.danger {
+  background: #fdeee9;
+  color: #c84b31;
+}
+
 @media (max-width: 860px) {
   .app { padding: 18px; }
   .topbar, .workspace { grid-template-columns: 1fr; }
   .stack { justify-content: flex-start; }
   .metrics { grid-template-columns: 1fr; }
   .details { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; }
+  .station-grid { grid-template-columns: 1fr; }
 }
