@@ -113,6 +113,40 @@ h1 {
   gap: 18px;
 }
 
+.side {
+  display: grid;
+  gap: 18px;
+  align-content: start;
+}
+
+.notice {
+  margin: 0 0 16px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: #e8f4ef;
+  border: 1px solid #cbe7da;
+  color: #14724f;
+}
+
+.hint {
+  margin: 0;
+  color: #8a6d1f;
+  background: #fdf6e0;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.error-text {
+  margin: 0;
+  color: #b3352b;
+  background: #fbe4e0;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 14px;
+}
+
 .panel, .list-panel {
   background: #fff;
   border: 1px solid #dfe7f1;
@@ -192,6 +226,41 @@ textarea {
   color: #14724f;
   font-size: 12px;
   white-space: nowrap;
+}
+
+.status.pause { background: #e8eef5; color: #445069; }
+.status.low { background: #fdf1e3; color: #a05a00; }
+.status.review { background: #fbe4e0; color: #b3352b; }
+.status.cancelled { background: #eceff3; color: #8a94a6; }
+
+.head-tags {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.late-tag {
+  border-radius: 999px;
+  padding: 6px 9px;
+  background: #fbe4e0;
+  color: #b3352b;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.review-box {
+  display: grid;
+  gap: 10px;
+  background: #fff8ec;
+  border: 1px dashed #e5c878;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.toolbar-meta {
+  color: #69758c;
+  font-size: 13px;
 }
 
 .details {
